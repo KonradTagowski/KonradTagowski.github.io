@@ -14,10 +14,9 @@ header {
   margin-bottom: 0px;
   position: relative;
   padding: auto;
-  background-color: #0093F5;
-  border-color: #fe5d26 ;
-  border-bottom: 2px #fe5d26;
-  border-bottom-style:ridge;
+  background-color: #57737A;
+  border-bottom: 1px #fe5d26;
+  border-bottom-style:groove;
   color: white;
 }
 
@@ -32,7 +31,7 @@ header div il {
   /*border: 2px solid #3e4444;/
   font-size: 24px;
   /*font-family: 'Courier New', Courier, monospace;*/
-  font-weight:800;
+  font-weight: 500;
   margin-inline: 10px;
   /*background-color: #FCFFEB; */
   padding: 10px 10px;
