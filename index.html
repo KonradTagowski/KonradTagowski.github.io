@@ -4,31 +4,56 @@
 <head>
     <meta charset="utf=8">
     <title>Konrad Tagowski</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="css/StyleSheet.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div>
-            <div>Konrad Tagowski</div>
-            <ul>
-                <il>Home</il>
-                <il>My Projects</il>
-                <il>Contact</il>
-            </ul>
+            <nav>
+                <div class="logo">Konrad Tagowski</div>
+                <ul class="navigation">
+                    <il><a href="#">About me</a></il>
+                    <il><a href="#">My Projects</a></il>
+                    <il><a href="#section_contact">Contact</a></il>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <h1>Moje projekty / My projects</h1>
-    <h3>Test</h3>
+    <div class="content">
+        <section class="MyProject">
+            <h1>My projects</h1>
+            <ul>
+                <il><a href="#">DIY WiFi LEDs controller</a></il>
+                <il><a href="https://konradtagowski.github.io/DIY_project_manager/">DIY Explorer - manage DIY
+                        projects</a></il>
+                <il><a href="#">soon...</a></il>
+            </ul>
+        </section>
 
+        <section class="About">
+            <h1>About me</h1>
+            <p>Master of Science in Mechatronics at Wrocław University of Science and Technology with highly motivated
+                to change a working interest to IT. I started learning as a website developer and am searching for a job
+                where I can learn from a basic level.</p>
+            <a href="https://github.com/KonradTagowski">My repositories on GitHub</a>
+        </section>
 
-    <script src="js/bootstrap.min.js"></script>
-    
+        <section id="section_contact" class="Contact">
+            <h1>Contact</h1>
+            <p>My contact will be added in future.</p>
+        </section>
+
+    </div>
+
+    <div></div>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+
 </body>
 
 </html>
