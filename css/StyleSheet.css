@@ -19,6 +19,7 @@ body {
 
 header {
   margin: 0;
+  position: sticky !important;
 }
 
 header nav {
@@ -216,6 +217,15 @@ section {
 footer {
   background-color: #6B818C;
   font-size: 0.5em;
+  margin: 0px;
+  min-height: 50px;
+  text-align: center;
+}
+
+footer p {
+  padding: 15px;
+  color: aliceblue;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 @media only screen and (max-width: 640px) {
