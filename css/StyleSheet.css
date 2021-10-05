@@ -3,10 +3,13 @@
 }
 
 html {
+  background-color: #6B818C;
   width: auto;
+  
 }
 
 body {
+  
   margin: 0;
   /* height: 100%; */
   /* padding: auto; */
@@ -14,6 +17,7 @@ body {
   /* font-family: 'Cormorant Garamond', serif; */
   font-family: 'Righteous', cursive;
   background-color: white;
+  display: grid;
   /* max-height: 80px; */
 }
 
@@ -21,6 +25,8 @@ header {
   margin: 0;
   position: sticky !important;
 }
+
+
 
 header nav {
   align-items: flex-start;
@@ -51,7 +57,7 @@ header nav {
   font-family: 'Pacifico', cursive; */
   text-align: center;
   /*background-color: ghostwhite; */
-  font-weight: 1000;
+  font-weight: 500;
   font-size: 28px;
   width: 120px;
   height: 80px;
@@ -96,7 +102,12 @@ header nav div il {
   border-left: 2px solid whitesmoke;
 }
 
+.navigation a:hover {
+  color: black;
+}
+
 .content {
+  transition: margin-left .5s;
   display: grid;
   grid-template-columns: auto;
 }
@@ -146,12 +157,14 @@ header nav div il {
   text-align: center;
   width: 100%;
   padding: 0;
-  background: rgb(0, 0, 0, 0.3);
+  font-weight: 400;
+  background: rgb(0, 0, 0, 0.45);
   margin-bottom: 20px !important;
 }
 
 .MyProject div {
   max-width: 600px;
+  display: grid;
 }
 
 .MyProject a {
@@ -171,6 +184,13 @@ header nav div il {
   width: 70%;
   height: 150px;
   background: rgb(0, 0, 0, 0.3);
+  box-shadow: 1px 3px 7px #fe5d26;
+  /* box-shadow: 3px 6px 10px #fe5d26; */
+}
+
+.MyProject a:hover {
+  color: white;
+  background: rgb(0, 0, 0, 0.6);
   box-shadow: 5px 10px 18px #fe5d26;
 }
 
@@ -185,6 +205,14 @@ header nav div il {
 
 .About a {
   color: black;
+}
+
+.content .About h2 {
+  margin-top: 20px;
+}
+
+.About ul {
+  padding: 0;
 }
 
 .scrollbar::-webkit-scrollbar, .scrollbar a::-webkit-scrollbar {
@@ -210,6 +238,7 @@ section {
   scroll-behavior: smooth;
   scroll-snap-type: proximity;
 }
+
 .Contact {
   color: #57737A;
 }
@@ -230,15 +259,16 @@ footer p {
 
 @media only screen and (max-width: 640px) {
   .MyProject a {
-    min-width: 250px;
+    clear: both;
+    /* min-width: 250px; */
   }
 }
 
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 641px) and (max-width: 1019px) {
   body {
     font-size: 20px;
   }
-  .MyProject a{
+  .MyProject a {
     max-width: 450px !important;
   }
 }
@@ -252,12 +282,30 @@ footer p {
     grid-template-rows: 80%, 20%;
   }
   .MyProject {
-    max-height: 750px;
+    /* max-height: 750px; */
     /* width */
     /* width: 10px; */
   }
   .MyProject div {
-    max-height: 550px;
+    /* max-height: 550px; */
     overflow: auto;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .MyProject div {
+    /* grid-template-columns: 50% 50%; */
+    max-width: 1350px;
+  }
+  .MyProject div ul {
+    grid-template-columns: 85% 85%;
+    display: grid;
+    max-width: 600px;
+    padding-right: auto;
+  }
+  .MyProject a {
+    max-width: 600px;
+    min-width: 300px;
+    margin-right: auto;
   }
 }

@@ -5,7 +5,10 @@
     <meta charset="utf=8">
     <title>Konrad Tagowski</title>
     <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-    <link href="css/StyleSheet.css" rel="stylesheet">
+    <link href="css/Style-Menu.css" rel="stylesheet">
+    <link href="css/StyleSheet.css" rel="stylesheet" title="Style">
+    <script src="js/script.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
@@ -13,11 +16,12 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
-    
+    <!-- <script src="js/script.js"></script> -->
 </head>
 
 <body>
-    <header>
+    <button onclick="openMenu()" class="menu-button" type="button"></button>
+    <header >
         <div>
             <nav>
                 <div class="logo">Konrad Tagowski</div>
@@ -30,7 +34,7 @@
         </div>
     </header>
 
-    <div class="content">
+    <div class="content" id="main">
         <section class="MyProject scrollbar">
             <h1>My projects</h1>
             <div class="scrollbar">
@@ -39,7 +43,7 @@
                             <h2>Wi-Fi LEDs controller (DIY)</h1>
                                 <p>Here will be description</p>
                         </a></il>
-                    <il><a href="https://konradtagowski.github.io/DIY_project_manager/">
+                    <il><a href="https://konradtagowski.github.io/DIY_project_manager/" target="_blank">
                             <h2>DIY Explorer</h1>
                                 <p>Web Application to manage DIY projects</p>
                         </a></il>
@@ -65,7 +69,22 @@
             <p>Master of Science in Mechatronics at Wrocław University of Science and Technology with highly motivated
                 to change a working interest to IT. I started learning as a website developer and am searching for a job
                 where I can learn from a basic level.</p>
-            <a href="https://github.com/KonradTagowski">My repositories on GitHub!</a>
+            <a href="https://github.com/KonradTagowski" target="_blank">My repositories on GitHub!</a>
+            <h2>My Skills</h2>
+            <ul>
+                <il>
+                    <p>HTML 1/5 (Still learning)</p>
+                </il>
+                <il>
+                    <p>CSS 1/5 (Still learning)</p>
+                </il>
+                <il>
+                    <p>JavaScript 0.5/5 (Not yet start learning)</p>
+                </il>
+                <il>
+                    <p>Java 0/5 (Not yet start learning)</p>
+                </il>
+            </ul>
         </section>
 
         <section id="section_contact" class="Contact">
@@ -77,8 +96,14 @@
     <footer>
         <p>Version: 01.10.2021</p>
     </footer>
+    <div class="side-menu" id="myside-menu">
+        <p>Style Menu</p>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <button onclick="changeStyle('StyleSheet.css')" type="button">Style 0!</button>
+        <button onclick="changeStyle('StyleSheet1.css')" type=" button">Style 1!</button>
+        <button onclick="changeStyle('StyleSheet2.css')" type="button">Style 2!</button>
+    </div>
     <!-- <script src="js/bootstrap.min.js"></script> -->
-
 </body>
 
 </html>
