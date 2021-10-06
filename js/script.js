@@ -15,5 +15,7 @@ function changeStyle(href, id_StyleSheet) {
     //  }
     // document.getElementsByTagName('head')[0].appendChild(link)
 
-
+openMenu();
+closeMenu();
+openMenu();
 }
