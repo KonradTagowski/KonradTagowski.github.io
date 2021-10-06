@@ -4,34 +4,35 @@
 <head>
     <meta charset="utf=8">
     <title>Konrad Tagowski</title>
-    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- StyleSheets -->
+    <link href="css/StyleSheet.css" rel="stylesheet">
     <link href="css/Style-Menu.css" rel="stylesheet">
-    <link href="css/StyleSheet.css" rel="stylesheet" title="Style">
+    <!-- Scripts -->
     <script src="js/script.js"></script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/menubar-script.js"></script>
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-
-    <!-- <script src="js/script.js"></script> -->
+    <!-- Another -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <button onclick="openMenu()" class="menu-button" type="button"></button>
-    <header >
-        
-            <nav>
-                <div class="logo">Konrad Tagowski</div>
-                <ul class="navigation">
-                    <il><a href="#">About me</a></il>
-                    <il><a href="#">My Projects</a></il>
-                    <il><a href="#section_contact">Contact</a></il>
-                </ul>
-            </nav>
-        
+    <header id="header">
+
+        <nav>
+            <div class="logo">Konrad Tagowski</div>
+            <ul class="navigation">
+                <il><a href="#">About me</a></il>
+                <il><a href="#">My Projects</a></il>
+                <il><a href="#section_contact">Contact</a></il>
+            </ul>
+        </nav>
+
     </header>
 
     <div class="content" id="main">
@@ -79,10 +80,13 @@
                     <p>CSS 1/5 (Still learning)</p>
                 </il>
                 <il>
-                    <p>JavaScript 0.5/5 (Not yet start learning)</p>
+                    <p>JavaScript 0.5/5 (Still learning)</p>
                 </il>
                 <il>
                     <p>Java 0/5 (Not yet start learning)</p>
+                </il>
+                <il>
+                    <p>mySQL 0/5 (Not yet start learning)</p>
                 </il>
             </ul>
         </section>
@@ -96,14 +100,24 @@
     <footer id="main">
         <p>Version: 01.10.2021</p>
     </footer>
+
     <div class="side-menu" id="myside-menu">
-        <p>Style Menu</p>
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <button onclick="changeStyle('StyleSheet.css')" type="button">Style 0</button>
-        <button onclick="changeStyle('StyleSheet1.css')" type=" button">Style 1</button>
-        <button onclick="changeStyle('StyleSheet2.css')" type="button">Style 2</button>
+        <h1>Style Menu</h>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+            <div>
+                <p>Home page</p>
+                <button onclick="changeStyle('StyleSheet.css',0)" type="button">Style 0</button>
+                <h3>Not finished</h3>
+                <button onclick="changeStyle('StyleSheet1.css',0)" type=" button">Style 1</button>
+                <h3>Not finished</h3>
+                <button onclick="changeStyle('StyleSheet2.css',0)" type="button">Style 2</button>
+            </div>
+            <div>
+                <p>Menu bar</p>
+                <button onclick="changeStyle('Style-Menu.css',1)" type="button">Style 0</button>
+                <button onclick="changeStyle('Style-Menu1.css',1)" type=" button">Style 1</button>
+            </div>
     </div>
-    <!-- <script src="js/bootstrap.min.js"></script> -->
 </body>
 
 </html>
