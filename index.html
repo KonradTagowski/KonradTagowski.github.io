@@ -11,11 +11,8 @@
     <script src="js/script.js"></script>
     <script src="js/menubar-script.js"></script>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,200&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <!-- Another -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -27,8 +24,8 @@
         <nav>
             <div class="logo">Konrad Tagowski</div>
             <ul class="navigation">
-                <il><a href="#">About me</a></il>
-                <il><a href="#">My Projects</a></il>
+                <il><a href="#section_project">My Projects</a></il>
+                <il><a href="#section_about">About me</a></il>
                 <il><a href="#section_contact">Contact</a></il>
             </ul>
         </nav>
@@ -36,10 +33,10 @@
     </header>
 
     <div class="content" id="main">
-        <section class="MyProject scrollbar">
+        <section id="section_project" class="MyProject scrollbar">
             <h1>My projects</h1>
-            <div class="scrollbar">
-                <ul class="scrollbar">
+            <div>
+                <ul>
                     <il><a href="#">
                             <h2>Wi-Fi LEDs controller (DIY)</h1>
                                 <p>Here will be description</p>
@@ -61,34 +58,182 @@
                             <h2>soon.........</h1>
                                 <p>Here will be description</p>
                         </a></il>
+                    <il><a href="#">
+                            <h2>soon.........</h1>
+                                <p>Here will be description</p>
+                        </a></il>
+                    <il><a href="#">
+                            <h2>soon.........</h1>
+                                <p>Here will be description</p>
+                        </a></il>
                 </ul>
             </div>
         </section>
 
-        <section class="About">
+        <section id="section_about" class="About">
             <h1>About me</h1>
             <p>Master of Science in Mechatronics at Wrocław University of Science and Technology with highly motivated
                 to change a working interest to IT. I started learning as a website developer and am searching for a job
                 where I can learn from a basic level.</p>
             <a href="https://github.com/KonradTagowski" target="_blank">My repositories on GitHub!</a>
-            <h2>My Skills</h2>
-            <ul>
+            <h2>Finished or in progress courses:</h2>
+            <ul class="courses">
                 <il>
-                    <p>HTML 1/5 (Still learning)</p>
+                    <div class="done">
+                        <p>&#10003</p>
+                    </div>
+                    <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers"
+                        target="_blank">HTML, CSS, and Javascript for Web Developers</a>
+                    <p>(Almost done)</p>
                 </il>
                 <il>
-                    <p>CSS 1/5 (Still learning)</p>
+                    <div class="done">
+                        <p>&#10003</p>
+                    </div>
+                    <a href="https://www.udacity.com/course/java-programming-basics--ud282" target="_blank">"Java
+                        Programming Bacis"</a>
                 </il>
                 <il>
-                    <p>JavaScript 0.5/5 (Still learning)</p>
+                    <div class="done">
+                        <p>&#10003</p>
+                    </div>
+                    <a href="https://www.udemy.com/course/learn-python-programming-a-step-by-step-course-to-beginners/"
+                        target="_blank">"Python programming a step by step course to beginners"</a>
                 </il>
                 <il>
-                    <p>Java 0/5 (Not yet start learning)</p>
-                </il>
-                <il>
-                    <p>mySQL 0/5 (Not yet start learning)</p>
+                    <div class="working">
+                        <p>&#128296</p>
+                    </div>
+                    <a href="https://www.edx.org/course/introduction-to-java-programming-starting-to-code"
+                        target="_blank">"Introduction to Java Programming: Starting to code in Java"</a>
                 </il>
             </ul>
+        </section>
+
+        <section id="section_skills" class="Skills">
+            <h1>My Skills <button class="info">
+                    <p>?</p>
+                </button></h1>
+            <div>
+                <div id="web-developer">
+                    <div>
+                        <h2>Web Developer </h2>
+
+                    </div>
+                    <ul>
+                        <il>
+                            <!-- To upgrade and fix... -->
+                            <ul>
+                                <il>
+                                    <p>HTML (Still learning)</p>
+                                </il>
+                                <il background="url('css/assets/g-0.7-star-1.png')" width="25" height="25"></il>
+                                <il><img src="css/assets/g-0.7-star-1.png" width="25" height="25"></img></il>
+                                <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                                <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                                <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                                <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                            </ul>
+                        </il>
+                        <il>
+                            <ul>
+                                <il>
+                                    <p>CSS (Still learning)</p>
+                                </il>
+                                <il><img src="css/assets/g-0.7-star-1.png" width="25" height="25"></img></il>
+                                <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                                <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                                <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                                <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                            </ul>
+
+                        </il>
+                        <il>
+                            <ul>
+                                <il>
+                                    <p>JavaScript (Still learning)</p>
+                                </il>
+                                <il><img src="css/assets/g-0.7-star-0.5.png" width="25" height="25"></img></il>
+                                <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                                <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                                <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                                <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                            </ul>
+
+                        </il>
+                        <il>
+                            <ul>
+                                <il>
+                                    <p>Java (Still learning)</p>
+                                </il>
+                                <il><img src="css/assets/g-0.7-star-0.5.png" width="25" height="25"></img></il>
+                                <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                                <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                                <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                                <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                            </ul>
+
+                        </il>
+                        <il>
+                            <ul>
+                                <il>
+                                    <p>SQL (Not yet start learning)</p>
+                                </il>
+                                <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                                <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                                <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                                <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                                <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                                <!-- <il><p1>+</p1></il> -->
+                            </ul>
+                        </il>
+                    </ul>
+                </div>
+            </div>
+            <div id="embedded">
+                <h2>Embedded</h2>
+                <ul>
+                    <il>
+                        <ul>
+                            <il>
+                                <p>Asembler</p>
+                            </il>
+                            <il><img src="css/assets/g-0.7-star-1.png" width="25" height="25"></img></il>
+                            <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                            <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                            <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                            <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                        </ul>
+                    </il>
+
+                    <il>
+                        <ul>
+                            <il>
+                                <p>C/C++</p>
+                            </il>
+                            <il><img src="css/assets/g-0.7-star-1.png" width="25" height="25"></img></il>
+                            <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                            <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                            <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                            <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                        </ul>
+                    </il>
+
+                    <il>
+                        <ul>
+                            <il>
+                                <p>Python</p>
+                            </il>
+                            <il><img src="css/assets/g-0.7-star-1.png" width="25" height="25"></img></il>
+                            <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                            <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                            <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                            <il><img src="css/assets/g-0.7-star-0.png" width="25" height="25"></img></il>
+                        </ul>
+                    </il>
+                </ul>
+            </div>
+
         </section>
 
         <section id="section_contact" class="Contact">
@@ -97,6 +242,7 @@
         </section>
 
     </div>
+
     <footer id="main">
         <p>Version: 01.10.2021</p>
     </footer>
@@ -108,14 +254,14 @@
                 <p>Home page</p>
                 <button onclick="changeStyle('StyleSheet.css',0)" type="button">Style 0</button>
                 <h3>Not finished</h3>
-                <button onclick="changeStyle('StyleSheet1.css',0)" type=" button">Style 1</button>
+                <button onclick="changeStyle('StyleSheet1.css',0)" type="button">Style 1</button>
                 <h3>Not finished</h3>
                 <button onclick="changeStyle('StyleSheet2.css',0)" type="button">Style 2</button>
             </div>
             <div>
                 <p>Menu bar</p>
                 <button onclick="changeStyle('Style-Menu.css',1)" type="button">Style 0</button>
-                <button onclick="changeStyle('Style-Menu1.css',1)" type=" button">Style 1</button>
+                <button onclick="changeStyle('Style-Menu1.css',1)" type="button">Style 1</button>
             </div>
     </div>
 </body>

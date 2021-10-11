@@ -5,13 +5,14 @@ function openMenu() {
     console.log(document.styleSheets[1].href)
     document.getElementById("main").style.transition = "margin-left .5s";
     document.getElementById("header").style.transition = "margin-left .5s";
+
     if (document.styleSheets[1].href == link.href) {
         document.getElementById("myside-menu").style.width = "165px";
         document.getElementById("main").style.marginLeft = "165px";
         document.getElementById("header").style.marginLeft = "165px";
     }
     else {
-        document.getElementById("myside-menu").style.width = "150px";
+        document.getElementById("myside-menu").style.width = "165px";
         document.getElementById("main").style.marginLeft = "0px";
         document.getElementById("header").style.marginLeft = "0px";
     }
