@@ -1,0 +1,9 @@
+MIDlet-1: HelloWorld,,HelloWorld.HelloWorld
+MIDlet-Jar-Size: 3338
+MIDlet-Jar-URL: Pierwszy.jar
+MIDlet-Name: Pierwszy MIDlet Suite
+MIDlet-Property1: property1
+MIDlet-Vendor: MIDlet Suite Vendor
+MIDlet-Version: 1.0.0
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: IMP-NG
